@@ -1,0 +1,14 @@
+@import "../css/style-images.css";
+
+.header-box {
+    grid-area: hd;
+    background-color: #66ccff;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.main-header {
+    margin: auto;
+    margin-bottom: 5px;
+}

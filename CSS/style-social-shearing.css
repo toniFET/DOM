@@ -1,0 +1,35 @@
+@media (max-width: 500px) {
+    .fa {
+      padding: 4px;
+      width: 25px;
+      text-align: center;
+      text-decoration: none;
+      margin: 2px 2px 2px 2px;
+    }
+}
+
+@media (min-width: 501px) {
+    .fa {
+      padding: 20px;
+      width: 65px;
+      text-align: center;
+      text-decoration: none;
+      margin: 2px 2px 2px 2px;
+    }
+}
+ 
+/* Facebook */
+.fa-facebook-official {
+  background: #3B5998;
+  color: white;
+  border-radius: 10%;
+  margin: 4px 4px 4px 4px;
+}
+  
+/* Youtube */
+.fa-youtube-square {
+  background: #e41a0c;
+  color: white;
+  border-radius: 10%;
+  margin: 4px 4px 4px 4px;
+}

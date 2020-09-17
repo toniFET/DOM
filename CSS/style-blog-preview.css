@@ -1,0 +1,27 @@
+.card {
+    border: solid 2px black;
+    margin: 2px 2px 2px 2px;
+}
+
+.card-title {
+    margin-left: 4px;
+}
+
+.preview {
+    margin-left: 4px;
+}
+
+.link {
+    margin: 2px 2px 2px 4px;
+    color: black;
+    text-decoration: none;
+    background-color: #818080;
+    padding: 3px 7px;
+    text-align: center; 
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.link:hover {
+    background-color: #66ccff;
+}

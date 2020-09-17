@@ -1,0 +1,8 @@
+.footer {
+    grid-area: ft;
+    background-color: #66ccff ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

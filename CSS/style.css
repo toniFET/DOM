@@ -1,0 +1,83 @@
+@import "../css/style-button.css";
+@import "../css/style-blog-preview.css";
+@import "../css/style-social-shearing.css";
+@import "../css/style-footer.css";
+@import "../css/style-header.css";
+
+body {
+    margin: 0px;
+    min-width: 240px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-rows: 250px 100px 1fr 80px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "nb nb nb nb nb nb"
+        "ct ct ct ct ct ct"
+        "ft ft ft ft ft ft";
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1100px) {
+    .container {
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-rows: 250px 150px 1fr 80px;
+        grid-template-columns: 150px 1fr;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "nb nb nb nb nb nb"
+        "ct ct ct ct ct ct"
+        "ft ft ft ft ft ft";
+    }
+}
+
+@media (min-width: 1101px) {
+    .container {
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-rows: 250px 200px 1fr 80px;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "nb nb nb nb nb nb"
+        "ct ct ct ct ct ct"
+        "ft ft ft ft ft ft";
+    }
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.navbar {
+    grid-area: nb;
+    background-color: rgb(73, 75, 75);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blog-posts {
+    grid-area: ct;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #c8cdcf;
+}
+
+.active {
+    background-color: rgb(252, 253, 252);
+}
+
+#unordered-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
