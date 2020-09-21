@@ -7,10 +7,9 @@ function createNav() {
 
     for (let entry of navEntry) {
        let li = document.createElement("li");
-       li.innerHTML += `<a href="#${entry.toLowerCase()}"><p>${entry}</p></a>`;
-       li.className = "button";
-       li.addEventListener("click", function() {
-        entry.scrollIntoView({behavior: "smooth"})
+       li.innerHTML += `<button class="button" onclick="window.location.href = '#${entry.toLowerCase()}';">${entry}</button>`;
+       li.addEventListener("click", () => {
+        entry.scrollIntoView({behavior: "smooth", block: "start"})
         })
        bingo.appendChild(li);
     }
